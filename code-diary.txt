@@ -1,0 +1,50 @@
+2025/04/24 - 13:15-14:58
+- Want to tick off smaller parts of big tasks and break it down
+- Want to visualise progress towards bigger task
+- Make progress chart (either pie chart or progress bar)
+- Simple interface, increment how many have, different progress, visuals
+
+- creating basic html, css and javascript to start with
+- don't know how to make chart, so will just make a text value that inc/dec
+- need to set number of items in task so can have max value - needs to be easy
+  to edit
+- if current value > new max, it automatically fixes the bound
+- init git repository so can backtrack
+
+Ideas:
+- use sass instead of css
+- use react to make structure more object-like
+
+Next steps:
+- figure out how to make chart in javascript: chart or D3, have used D3 before
+  but for this project, simple chart is probably better
+https://www.w3schools.com/ai/ai_chartjs.asp
+https://www.w3schools.com/ai/ai_d3js.asp
+https://www.chartjs.org/docs/latest/charts/bar.html 
+- show percentage
+- ability to set task name
+
+15:22-16:09
+- created bar chart
+- struggling with axis options for min & max values. This works:
+scales: {
+            xAxes: [{ticks: {min: 10, max:60}}]
+        }
+- setting min and max of chart with bounds of data
+- switching over from text value to chart value
+- updating chart data with increment
+
+Ideas:
+- can select colour theme 
+- can select bar vs donut for chart
+
+21:25-22:36
+- chart functionality complete
+- add task name input box
+- move some css to be inline if it is just 1 line for an element
+- also move stuff around in file so it is elements, classes, then IDs
+- update chart name when submit form - changed function to update max & name
+  in one, and renamed it updateSettings()
+- add percentage below settings
+- update whenever max updates or inc / dec -> calc complete/total & put % sign
+

@@ -1,0 +1,48 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    width: 90%;
+}
+h1, h2 {
+    text-align: center;
+}
+input {
+    padding: 5px;
+    margin: 0 10px;
+    font-family: inherit;
+}
+button {
+    color: white;
+    background: teal;
+    margin: 15px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px grey;
+}
+button:hover {
+    color: black;
+    background:aquamarine;
+}
+button:active {
+    color: black;
+    background:aquamarine;
+    transform: translateY(3px) !important;
+    box-shadow: 0px 0px 10px grey;
+}
+.increment-button {
+    font-size: 1.2em;
+    width: 100px;
+}
+#buttons, #settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#chart {
+    border: 1px solid black;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Progress Chart</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https://kaylamoorcroft.github.io\images\coding-icon.jpeg">
+    <meta name="author" content="Kayla Moorcroft">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+  </head>
+  <body>
+    <h1>Progress Chart</h1>
+    <main>
+        <form id="settings">
+            <label for="taskName">Task name:</label>
+            <input type="text" id="taskName" name="taskName">
+            <label for="numSubtasks">Number of subtasks:</label>
+            <input type="number" id="numSubtasks" name="numberOfSubtasks" style="width:40px;" value="10">
+            <button type="submit" id="setButton" style="width:60px;">Set</button>
+        </form>
+        <h2 id="percentComplete">0%</h2>
+        <canvas id="chart">
+        </canvas>
+        <div id="buttons">
+            <button id="decrement" class="increment-button">-</button>
+            <button id="increment" class="increment-button">+</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
